@@ -1,0 +1,623 @@
+:: StoryTitle
+ПК для бизнес фигни
+
+
+:: StoryData
+{
+  "ifid": "8F48E0DF-6AB4-438C-8B09-BD48DE540C0B",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Описание категории",
+  "zoom": 1
+}
+
+
+:: Дорогой ПК {"position":"600,600","size":"100,100"}
+{=
+(if:$assemble is "true")
+[
+    (click-rerun:?cpu)[(open-url:"https://www.dns-shop.ru/product/d4bde9994d11ed20/processor-amd-ryzen-5-7500f-oem/")]
+    (click-rerun:?mboard)[(open-url:"https://www.dns-shop.ru/product/414e9c60e254ed20/materinskaa-plata-msi-b650-gaming-plus-wifi/")]
+    (click-rerun:?psu)[(open-url:"https://www.dns-shop.ru/product/309866790b00d763/blok-pitania-chieftec-powerup-750w-gpx-750fc-cernyj/")]
+    (click-rerun:?case)[(open-url:"https://www.dns-shop.ru/product/832f685142bfed20/korpus-montech-air-1000-silent--cernyj/")]
+    (click-rerun:?cooling)[(open-url:"https://www.dns-shop.ru/product/e2949b243404ed20/kuler-dla-processora-id-cooling-se-224-xts-se-224-xts/")]
+    (click-rerun:?ram)[(open-url:"https://www.dns-shop.ru/product/859ec8b0fb35ed20/operativnaa-pamat-kingston-fury-beast-black-kf556c40bbk2-64-64-gb/")]
+    (click-goto:?rest, "Дорогой ПК остальное")
+]
+(else:)
+[
+	(click-rerun:?pc)[(open-url:"https://www.dns-shop.ru/product/2b84fcc5a335d582/pk-ardor-gaming-rage-h361/")]
+    (click-goto:?rest, "Дорогой ПК переферия")
+]
+
+<div class="choosegoods">
+	(if:$assemble is "true")
+    [
+        [
+            <div class="good">
+                <img class="goodimg" src="https://c.dns-shop.ru/thumb/st4/fit/wm/0/0/c7c28253ee6da8c47d6323f5cbb5b852/e6293f21cc6d64c505e37405fa55d329827db7f8cd863e254841198e037f2386.jpg.webp"/>
+                Процессор AMD Ryzen 5 7500F OEM - 17499 руб.
+            </div>
+        ]<cpu|
+
+        [
+            <div class="good">
+                    <img class="goodimg" src="https://c.dns-shop.ru/thumb/st4/fit/wm/0/0/b02cea8a09b6109a598c6cdca852534f/f3465b1dd9af53fe73dc06da168b9d1a42ea0530c467065cb097a541a07d152e.jpg.webp"/>
+                Материнская плата MSI B650 GAMING PLUS WIFI - 24999 руб.
+            </div>
+        ]<mboard|
+
+        [
+            <div class="good">
+                <img class="goodimg" src="https://c.dns-shop.ru/thumb/st1/fit/wm/0/0/135e8f52f8ebea43958262aaba9678fc/928e9e5150d190ef989113426ab83eec97a8ed948192a1cbc1b29c1ee9a999f5.jpg.webp"/>
+                Блок питания Chieftec PowerUP 750W (черный) - 12999 руб.
+            </div>
+        ]<psu|
+
+        [
+            <div class="good">
+                <img class="goodimg" src="https://c.dns-shop.ru/thumb/st1/fit/wm/0/0/da8b2ae9560ed6c903fe5a038848768d/73ed0d5b7b9bf92144c0af20bbe6a00673a72d6a4a597f8365db67226807549c.jpg.webp"/>
+                Корпус MONTECH AIR 1000 SILENT (черный) - 7999 руб.
+            </div>
+        ]<case|
+
+        [
+            <div class="good">
+                <img class="goodimg" src="https://c.dns-shop.ru/thumb/st4/fit/0/0/f1412e53a441f101df367cde2a3af9ef/1df14f6bba96a4d8b2022fb5f7d32a8b84a93b1883935bf9b21b980e71577de9.jpg.webp"/>
+                Кулер для процессора ID-COOLING SE-224-XTS - 2699 руб.
+            </div>
+        ]<cooling|
+
+        [
+            <div class="good">
+                <img class="goodimg" src="https://c.dns-shop.ru/thumb/st4/fit/wm/0/0/f953a795f3d35fcc9c8c0f4d849ec028/44f504cf9cf8ee098650eba974a9a52e54d02d6f6c28afea6ee36dc6c1b3c19f.jpg.webp"/>
+                Оперативная память Kingston FURY Beast Black 64 ГБ - 25899 руб.
+            </div>
+        ]<ram|
+    ]
+    (else:)
+    [
+    	[
+            <div class="good">
+                    <img class="goodimg" src="https://c.dns-shop.ru/thumb/st1/fit/wm/0/0/48b0f5a6575822c35e6e88f256bf2c16/aa79c114283b0835b6d373616d061f3a9f9bb3e8a9e6beb7be81b75e9c5dafe3.jpg.webp"/>
+                    ПК ARDOR GAMING RAGE H361 - 177999 руб.
+                </div>
+            ]<pc|
+    ]
+    
+    [
+    	<div class="good" style="margin-top:5px">
+        	(if:$assemble is "true")[Остальные комплектующие ->](else:)[Перейти к переферии ->]
+        </div>
+    ]<rest|
+</div>
+
+<div class="textbox">
+Данный ПК обеспечит комфортную работу в любом виде деятельности, например: работа с трёхмерной графикой и её отображение, "тяжёлый" монтаж видео с множеством эффектов, создание и сборка приложений с массивной кодовой базой, или запуск локальных нейронных сетей. Он быстр и надёжен, (if:$assemble is "true")[а также имеет некоторый потенциал для улучшения комплектующих](else:)[а также имеет красочный дизайн с подсветкой].<br/>
+Его стоимость с переферией составляет (if: $assemble is "true")[''217587 руб.''](else:)[''217695 руб.''], без переферии - (if: $assemble is "true")[''177891 руб.''](else:)[''177999 руб.''].
+</div>
+
+
+:: Дорогой ПК остальное {"position":"700,525","size":"100,100"}
+{=
+(click-rerun:?ssd)[(open-url:"https://www.dns-shop.ru/product/ef8b726f1d42ed20/2000-gb-m2-nvme-nakopitel-samsung-980-pro-mz-v8p2t0bw/")]
+(click-rerun:?gpu)[(open-url:"https://www.dns-shop.ru/product/762cea834881ed20/videokarta-gigabyte-amd-radeon-rx-7700-xt-gaming-oc-gv-r77xtgaming-oc-12gd/")]
+(click-rerun:?extracool)[(open-url:"https://www.dns-shop.ru/product/e4ec6e5cf909ed20/ventilator-arctic-cooling-p12-max-acfan00280a/")]
+(click-goto:?rest, "Дорогой ПК переферия")
+
+<div class="choosegoods">
+	[
+        <div class="good">
+            <img class="goodimg" src="https://c.dns-shop.ru/thumb/st4/fit/wm/0/0/a0e328d11f7dab8397c48b01500225d9/b88f2ef75f876c3fd18b09ab4dbc996e79667ecefa95c03c11b990a473f8dbe2.jpg.webp"/>
+            2000 ГБ M.2 NVMe накопитель Samsung 980 PRO - 22499 руб.
+        </div>
+    ]<ssd|
+
+	[
+    	<div class="good">
+        	<img class="goodimg" src="https://c.dns-shop.ru/thumb/st1/fit/wm/0/0/c53c32ab6a90f7c5d236b6cfce59c78a/dbcdd95f3be18e49bf6886e5a460e166eddf5ed0e84e87aa7196dbe2b3a355e3.jpg.webp"/>
+            Видеокарта GIGABYTE AMD Radeon RX 7700 XT GAMING OC - 61999 руб.
+        </div>
+    ]<gpu|
+    
+    [
+    	<div class="good">
+        	<img class="goodimg" src="https://c.dns-shop.ru/thumb/st4/fit/wm/0/0/f8482ec1ad9b5025ce6dfbf5357d47a9/516a05764f1b5009432795767305454b09a10b041c8881ccc58ebfda554d2b8f.jpg.webp" />
+            Вентилятор Arctic Cooling P12 Max - 1299 руб
+        </div>
+    ]<extracool|
+
+    [
+    	<div class="good" style="margin-top:5px">
+        	Перейти к переферии ->
+        </div>
+    ]<rest|
+</div>
+
+<div class="textbox">
+Данный ПК обеспечит комфортную работу в любом виде деятельности, например: работа с трёхмерной графикой и её отображение, "тяжёлый" монтаж видео с множеством эффектов, создание и сборка приложений с массивной кодовой базой, или запуск локальных нейронных сетей. Он быстр и надёжен, а также имеет некоторый потенциал для улучшения комплектующих.<br/>
+Его стоимость с переферией составляет ''217587 руб.'', а без переферии - ''177891 руб.''.
+</div>
+
+
+:: Дорогой ПК переферия {"position":"700,625","size":"100,100"}
+{=
+(click-rerun:?monitor)[(open-url:"https://www.dns-shop.ru/product/40469fce3e77d9cb/238-monitor-xiaomi-g24i-cernyj/")]
+(click-rerun:?keyboard)[(open-url:"https://www.dns-shop.ru/product/ef49b07878d47b06/klaviatura-provodnaa--besprovodnaa-keychron-v3-max-v3m-d4/")]
+(click-rerun:?mouse)[(open-url:"https://www.dns-shop.ru/product/513f4d952a79ed20/mys-provodnaa-xiaomi-wired-mouse-game-lite-bhr5716cn-cernyj/")]
+(click-goto:?rest, "ПО")
+
+<div class="choosegoods">
+	[
+    	<div class="good">
+        	<img class="goodimg" style="width:75px" src="https://c.dns-shop.ru/thumb/st1/fit/0/0/a5eadcb8c74073fe49072bad89fff62b/ddc54759ea88c6dd0cb506988973469dbf4b9c9be8048473a44bb07bd56f1495.png.webp"/>
+            23.8" Монитор Xiaomi G24i (черный) - 12999 руб./шт, 25998 руб. за 2 шт.
+        </div>
+    ]<monitor|
+    
+    [
+    	<div class="good">
+        	<img class="goodimg" src="https://c.dns-shop.ru/thumb/st1/fit/wm/0/0/5adc3477753c6379cb85b1402572686b/fa653799a92e998b3ccbcfd1dc91dd7d848c6bd070d8a12103af5532135e0ca5.jpg.webp" />
+            Клавиатура проводная + беспроводная Keychron V3 Max - 11799 руб.
+        </div>
+    ]<keyboard|
+    
+    [
+    	<div class="good">
+        	<img class="goodimg" src="https://c.dns-shop.ru/thumb/st1/fit/wm/0/0/3def10e30eadc137d45c904535b81826/a7322df5d8f02f3cd6203a8ddfdddfe9a62d6d59ca7cfe821be63ecd64457c04.jpg.webp" />
+            Мышь проводная Xiaomi Wired Mouse Game Lite (чёрный) - 1899 руб
+        </div>
+    ]<mouse|
+
+    [
+    	<div class="good" style="margin-top:5px">
+        	К ПО ->
+        </div>
+    ]<rest|
+</div>
+
+<div class="textbox">
+Данная переферия обеспечит комфорт и удобство во время работы, вне зависимости от её типа.<br/>
+Стоимость набора - ''39697 руб.''
+</div>
+
+
+:: Заказ нового ПК {"position":"400,600","size":"100,100"}
+{=
+(click:?assemble)[(set:$assemble to "true") (go-to: "ПК")]
+(click:?assembled)[(go-to: "ПК")]
+<div class="choosemid">
+[Набор комплектующих (для самостоятельной сборки)]<assemble|
+[Готовое решение]<assembled|
+</div>
+<div class="textbox">
+В каком виде должен быть ПК?
+</div>
+
+
+:: Конец {"position":"1200,725","size":"100,100"}
+{=
+<div class="textbox">
+    Выбор ПК и установка приложений для чемпионата завершены, спасибо за пользование!
+</div>
+
+
+:: Минимальный ПК {"position":"500,700","size":"100,100"}
+{=
+(if:$assemble is "true")
+[
+    (click-rerun:?cpu)[(open-url:"https://www.dns-shop.ru/product/1e516fdd6a793332/processor-intel-pentium-gold-g6400-oem/")]
+    (click-rerun:?mboard)[(open-url:"https://www.dns-shop.ru/product/1c4e87cd8208d582/materinskaa-plata-biostar-h510mhp-40/")]
+    (click-rerun:?psu)[(open-url:"https://www.dns-shop.ru/product/f5743d04b605d21a/blok-pitania-digma-dpsu-350w--cernyj/")]
+    (click-rerun:?case)[(open-url:"https://www.dns-shop.ru/product/98f0ad6e5f423332/korpus-dexp-dc-302r--krasnyj/")]
+    (click-rerun:?cooling)[(open-url:"https://www.dns-shop.ru/product/cd54a8497a80ed20/kuler-dla-processora-id-cooling-dk-01t-lga1700/")]
+    (click-rerun:?ram)[(open-url:"https://www.dns-shop.ru/product/b2eb2c44c1f63330/operativnaa-pamat-apacer-el08g2vgnh-8-gb/")]
+    (click-rerun:?ssd)[(open-url:"https://www.dns-shop.ru/product/7135d85ae5b73332/512-gb-25-sata-nakopitel-patriot-memory-p210-p210s512g25/")]
+]
+(else:)
+[
+	(click-rerun:?pc)[(open-url:"https://www.dns-shop.ru/product/8800751995cdd9cb/pk-dexp-aquilon-o309/")]
+]
+
+(click-goto:?rest, "Минимальный ПК Переферия")
+
+<div class="choosegoods">
+	(if:$assemble is "true")
+    [
+        [
+            <div class="good">
+                <img class="goodimg" src="https://c.dns-shop.ru/thumb/st4/fit/wm/0/0/93ebdcc98e471a716fcb214da768261f/648c3f251880638bf4a4f1c4ebc4201ba8238afb0a0468e862298d214c3d7478.jpg.webp"/>
+                Процессор Intel Pentium Gold G6400 OEM - 7499 руб.
+            </div>
+        ]<cpu|
+
+        [
+            <div class="good">
+                    <img class="goodimg" src="https://c.dns-shop.ru/thumb/st1/fit/0/0/b7fc2f8ae4ebc0b84a556283c5bb520b/45f313508058a7a32360808ba52d58124e7491d3ee1e31e2552c0d54d5422752.png.webp"/>
+                Материнская плата Biostar H510MHP 4.0 - 6899 руб.
+            </div>
+        ]<mboard|
+
+        [
+            <div class="good">
+                <img class="goodimg" src="https://c.dns-shop.ru/thumb/st1/fit/0/0/742ca6bed0aec8328f180ee1dfa6302e/7d4f07298f06b287b71bd81415cdf0ed5610e35a03d54ed5317ebb5fc99685cb.png.webp"/>
+                Блок питания Digma DPSU-350W (чёрный) - 2199 руб.
+            </div>
+        ]<psu|
+
+        [
+            <div class="good">
+                <img class="goodimg" src="https://c.dns-shop.ru/thumb/st1/fit/wm/0/0/02a3e115ee1dfa4968778c00e2ff9fec/9ae48b08f48b64517d51b98859cf2e8613f2ea94e14410d14330e591530abd2e.jpg.webp"/>
+                Корпус DEXP DC-302R (красный) - 1599 руб.
+            </div>
+        ]<case|
+
+        [
+            <div class="good">
+                <img class="goodimg" src="https://c.dns-shop.ru/thumb/st1/fit/wm/0/0/c5977a13005e68047623b1973cecc277/6f9745e2035bf3c064c34524a2cf113136af8bfe6224f84e3449afa7452ea0db.jpg.webp"/>
+                Кулер для процессора ID-COOLING DK-01T - 499 руб.
+            </div>
+        ]<cooling|
+
+        [
+            <div class="good">
+                <img class="goodimg" src="https://c.dns-shop.ru/thumb/st1/fit/wm/0/0/b1f2110f9b3058ac8d9602cff688ceb3/2f793db0d8faebd9c29a716881d928d092cb4f1166cf08368c5b91e0a4e129d4.jpg.webp"/>
+                Оперативная память Apacer 8 ГБ - 1499 руб.
+            </div>
+        ]<ram|
+
+        [
+            <div class="good">
+                <img class="goodimg" src="https://c.dns-shop.ru/thumb/st4/fit/wm/0/0/bec87c9e7f5aa4dc8625f48d767ce2fc/533c50debfbef88ee055e16864e2be63c6827c497e9e718e99b0b9bd15604fc0.jpg.webp"/>
+                512 ГБ 2.5" SATA накопитель Patriot Memory P210 - 3199 руб.
+            </div>
+        ]<ssd|
+    ]
+    (else:)
+    [
+    	[
+            <div class="good">
+                    <img class="goodimg" src="https://c.dns-shop.ru/thumb/st1/fit/wm/0/0/62cd19931987491140a6012bbd5a76f8/4b59935d110818cb620ddea8ff9e2d346cbdb62da24aa30e12b14963ecefd554.png.webp"/>
+                    ПК DEXP Aquilon O309 - 24699 руб.
+                </div>
+            ]<pc|
+    ]
+    
+    [
+    	<div class="good" style="margin-top:5px">
+        	Перейти к переферии ->
+        </div>
+    ]<rest|
+</div>
+
+<div class="textbox">
+Данный ПК - самый дешёвый из подходящих по требованиям для данного чемпионата.<br/>
+Его стоимость с переферией составляет (if: $assemble is "true")[''38971 руб.''](else:)[''40766 руб.''], без переферии - (if: $assemble is "true")[''22894 руб.''](else:)[''24699 руб.''].
+</div>
+
+
+:: Минимальный ПК Переферия {"position":"600,750","size":"100,100"}
+{=
+(click-rerun:?monitor)[(open-url:"https://www.dns-shop.ru/product/887c624916deed20/2145-monitor-dexp-df22n2s-cernyj/")]
+(click-rerun:?keyboard)[(open-url:"https://www.dns-shop.ru/product/172e7aba2bd43330/klaviatura-provodnaa-defender-hb-420-45420/")]
+(click-rerun:?mouse)[(open-url:"https://www.dns-shop.ru/product/6f65217943073120/mys-provodnaa-cbr-cm-102--cernyj/")]
+(click-goto:?rest, "ПО")
+
+<div class="choosegoods">
+    [
+    	<div class="good">
+        	<img class="goodimg" style="width:75px" src="https://c.dns-shop.ru/thumb/st4/fit/0/0/15cf07db62581a190f1d3461f05880a7/21faa8c32f35d6f10f805450e85c0e91280a7a0423ff93e06a2f5bdbe16346af.jpg.webp"/>
+            21.45" Монитор DEXP DF22N2S (черный) - 7699 руб./шт., 15398 руб. за 2 шт
+        </div>
+     ]<monitor|
+     
+     [
+    	<div class="good">
+        	<img class="goodimg" src="https://c.dns-shop.ru/thumb/st4/fit/wm/0/0/4a5a831a418009cc549d67f221440438/addbd1f90c03cf2e3707ee15913fb97cd8dd0ba7eb23ad0a5d6938da42e24204.jpg.webp"/>
+           	Клавиатура проводная Defender HB-420 - 499 руб.
+        </div>
+     ]<keyboard|
+     
+     [
+    	<div class="good">
+        	<img class="goodimg" style="height:85px" src="https://c.dns-shop.ru/thumb/st1/fit/wm/0/0/bf058028e746ff83098fff413694fd46/bb1dd33046e6a95650dbf7569d487d8c57ce06143ebe163dfe1d6feff5d70385.jpg.webp"/>
+           	Мышь проводная CBR CM-102 (черный) - 180 руб.
+        </div>
+     ]<mouse|
+     
+     [
+     <div class="good" style="margin-top: 5px">
+     	К ПО ->
+     </div>
+     ]<rest|
+</div>
+
+<div class="textbox">
+Данный набор переферии соответствует всем требованиям чемпионата.<br/>
+Его общая стоимость - <b>16077 руб.</b>
+</div>
+
+
+:: Описание категории {"position":"300,600","size":"100,100"}
+{=
+(click-goto:?newpc, "Заказ нового ПК")
+(click-goto:?curpc, "Характеристики текущего ПК")
+<div class="choosemid">
+[Заказать новый ПК]<newpc|
+[Посмотреть характеристики текущего ПК]<curpc|
+</div>
+<div class="textbox">
+Категория "Программные решения для бизнеса" включает в себя создание приложений для увеличения эффективности управления бизнесом, а также эффективности работы менеджеров и остальных сотрудников. Также эта категория может включать приложения для конечного потребителя продукта, например приложение интернет-магазина.
+Что вы хотите сделать?
+</div>
+
+
+:: ПК {"position":"500,600","size":"100,100"}
+{=
+(click-goto:?min, "Минимальный ПК")
+(click-goto:?ad, "Дорогой ПК")
+(click-goto:?work, "Рабочий ПК")
+<div class="choosemid">
+[Минимальную]<min|
+["Комфорт"]<ad|
+[Бюджетную]<work|
+</div>
+<div class="textbox">
+Какую конфигурацию ПК вы хотите заказать?
+</div>
+
+
+:: ПО {"position":"700,725","size":"100,100"}
+{=
+(click-rerun:?app)[(open-url:"https://okular.kde.org/download/")]
+(click-goto:?next, "ПО2")
+
+<div class="choosegoods">
+[
+	<div class="good">
+        <img src="https://okular.kde.org/images/okular.png" class="goodimg" style="width:50px; height: 50px;"/>
+        Установить Okular
+    </div>
+</div>
+]<app|
+
+[
+     <div class="good" style="margin-top: 5px">
+     	Далее ->
+     </div>
+]<next|
+</div>
+
+<div class="elongatedtextbox">
+    В качестве ПО для просмотра и редактирования PDF-документов следует использовать приложение Okular. Okular - популярное, некоммерческое, мультиплатформенное приложение с открытым исходным кодом, обладающее большим списком поддерживаемых форматов документов и даже книг, входящее в состав KDE, оно (как правило) установлено по стандарту вместе с окружением KDE Plasma или KDE Plasma Mobile (для мобильных устройств).
+    В качестве альтернативы можете использовать веб-браузер, если он поддерживает открытие PDF-документов.
+</div>
+
+
+:: ПО2 {"position":"800,725","size":"100,100"}
+{=
+(click-rerun:?app)[(open-url:"https://7-zip.org/download.html")]
+(click-goto:?next, "ПО3")
+
+<div class="choosegoods">
+[
+	<div class="good">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/7ziplogo.svg/1024px-7ziplogo.svg.png" class="goodimg" style="width:75px; height: 50px;"/>
+        Установить 7Zip
+    </div>
+</div>
+]<app|
+
+[
+     <div class="good" style="margin-top: 5px">
+     	Далее ->
+     </div>
+]<next|
+</div>
+
+<div class="elongatedtextbox">
+    В качестве ПО для архивации следует использовать приложение 7Zip. 7Zip - относительно популярное, некоммерческое, мультиплатформенное приложение с открытым исходным кодом, обладающее большим списком поддерживаемых форматов архивов и алгоритмов сжатия, а также широким функционалом.
+</div>
+
+
+:: ПО3 {"position":"900,725","size":"100,100"}
+{=
+(click-rerun:?app)[(open-url:"https://www.libreoffice.org/download/download-libreoffice/?type=rpm-x86_64&version=24.8.4&lang=ru")]
+(click-goto:?next, "ПО4")
+
+<div class="choosegoods">
+[
+	<div class="good">
+        <img src="https://res-academy.cache.wpscdn.com/images/seo_posts/20240125/2eec5a137904728c147f320044db05b8.png" class="goodimg" style="width:75px; height: 50px;"/>
+        Установить LibreOffice
+    </div>
+</div>
+]<app|
+
+[
+     <div class="good" style="margin-top: 5px">
+     	Далее ->
+     </div>
+]<next|
+</div>
+
+<div class="elongatedtextbox">
+    В качестве пакета офисных приложений следует использовать LibreOffice. LibreOffice - самый популярный мультиплатформенный пакет офисных приложений с открытым исходным кодом, состоящим из множества аналогов приложений из пакета Microsoft Office 365, заменяющих большую его часть, обладающих похожим интерфейсом и функционалом.
+</div>
+
+
+:: ПО4 {"position":"1000,725","size":"100,100"}
+{=
+(click-rerun:?app)[(open-url:"https://draw.io")]
+(click-goto:?next, "ПО5")
+
+<div class="choosegoods">
+[
+	<div class="good">
+        <img src="https://avatars.mds.yandex.net/get-entity_search/5578840/543255467/S114x114FitScale_2x" class="goodimg" style="width:50px; height: 50px;"/>
+        Использовать или установить draw.io
+    </div>
+</div>
+]<app|
+
+[
+     <div class="good" style="margin-top: 5px">
+     	Далее ->
+     </div>
+]<next|
+</div>
+
+<div class="elongatedtextbox">
+    В качестве приложения для построения UML-диаграмм следует использовать draw.io. draw.io - веб-сайт и приложение для составления UML-диаграмм, обладающее широким функционалом, несмотря на несколько сложный в освоении интерфейс.
+</div>
+
+
+:: ПО5 {"position":"1100,725","size":"100,100"}
+{=
+(click-rerun:?app)[(open-url:"https://git-scm.com")]
+(click-goto:?next, "Конец")
+
+<div class="choosegoods">
+[
+	<div class="good">
+        <img src="https://gitlab.com/e.s.s.e.e.system/test_project_2/-/avatar" class="goodimg" style="width:50px; height: 50px;"/>
+        Установить Git
+    </div>
+</div>
+]<app|
+
+[
+     <div class="good" style="margin-top: 5px">
+     	Далее ->
+     </div>
+]<next|
+</div>
+
+<div class="elongatedtextbox">
+    В качестве системы контроля версий следует использовать Git. Git - самая популярная в мире система контроля версий, она имеет поддержку множества платформ, открытый исходный код, высокую производительность, широкий функционал, а также интеграции в большинстве IDE.
+</div>
+
+
+:: Рабочий ПК {"position":"500,500","size":"100,100"}
+{=
+<div class="textbox">
+Извините, но соответствующий требованиям компьютер в данной конфигурации (из новых комплектующих) собрать невозможно, ведь она подразумевает бюджет в ''600 тыс. руб.'' на кабинет (''24 тыс. руб.'' на ПК), но минимально возможная конфигурация превышает бюджет. Стоимость минимальной конфигурации - (if: $assemble is "true")[''38971 руб.''](else:)[''40766 руб.''] за 1 единицу (включая переферию), или же  (if: $assemble is "true")[''974 275 руб.''](else:)[''1 019 150 руб.''] за полный кабинет (25 ПК). ''Пожалуийста, вернитесь к выбору конфигурации.''
+</div>
+
+
+:: Характеристики текущего ПК {"position":"300,500","size":"100,100"}
+{=
+<div class="textbox">
+На изображении выше предоставлены характеристики текущего ПК
+</div>
+
+
+:: StoryStylesheet [stylesheet]
+tw-story
+{
+  	background-image: url("https://4pda.to/s/as6yxtsmmgrUa7OJvcLalnAYZoHM65ZmD5A2z27.png");
+  	min-height: 100vh;
+  	width: 100vw
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position:relative;
+  	margin-top: 0px;
+}
+
+.choosemid
+{
+  	display:flex;
+  	flex-direction:column;
+  	justify-content:center;
+  	align-content: center;
+  	text-align: center;
+	margin: 0px;
+  	gap:20px;
+}
+
+.choosemid > *
+{
+  	margin:0px;
+  	border-radius: 10px;
+  	background-color: white;
+  	color: black;
+}
+
+.choosemid > *:hover
+{
+  	background-color: gray;
+}
+
+.choosegoods
+{
+  	display:flex;
+  	flex-direction:column;
+  	justify-content:center;
+  	align-content: center;
+  	text-align: center;
+  	vertical-align:middle;
+	margin: 0px;
+  	gap:5px;
+}
+
+.choosegoods > *
+{
+  	display:flex;
+  	flex-direction:column;
+  	justify-content:center;
+  	align-content: center;
+  	text-align: center;
+  	vertical-align:middle;
+	margin: 0px;
+  	gap:5px;
+}
+
+.good
+{
+  	margin:0px;
+  	border-radius: 10px;
+  	background-color: white;
+  	color: black;
+}
+
+.good:hover
+{
+	background-color: gray;
+}
+
+.goodimg
+{
+	width: 50px;
+  	height: 50px;
+  	margin-right: 10px;
+}
+
+.textbox
+{
+  	padding: 5px;
+  	height: 15%;
+  	position: fixed;
+  	bottom: 4%;
+  	background-color: white;
+  	width: 60%;
+  	border-radius: 10px;
+  	color:black;
+  	hyphens: auto;
+ 	line-height: 110%;
+  	font-size: 75%;
+}
+
+.elongatedtextbox
+{
+  	padding: 5px;
+  	height: 20%;
+  	position: fixed;
+  	bottom: 4%;
+  	background-color: white;
+  	width: 60%;
+  	border-radius: 10px;
+  	color:black;
+  	hyphens: auto;
+ 	line-height: 110%;
+  	font-size: 75%;
+}
